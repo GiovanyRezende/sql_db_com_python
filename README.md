@@ -38,7 +38,7 @@ Em ordem de cadastro, as tabelas criadas são:
 - tb_asteroide
 - tb_corpo_celeste_substancia (sendo essa uma associativa)
 
-Ainda que já exista um modo de classificar os corpos, é necessário que cada classificação tenha a sua tabela, mesmo que tenha apenas um ID e uma chave estrangeira, pois, astronomicamente, cada objeto pode ter atributos e relações diferentes. Um exemplo sobre atributo é que corpos que não são estrelas têm dados orbitais relevantes para o banco, como o periélio, afélio e período de translação da órbita, enquanto para estrelas essas informações não são relevantes nesse caso. Um exemplo sobre relação é que um satélite orbita um planeta enquanto um planeta anão não terá uma órbita afetada por um planeta necessária para cadastrar nesse cenário.
+Ainda que já exista um modo de classificar os corpos, é necessário que cada classificação tenha a sua tabela, mesmo que tenha apenas um ID e uma chave estrangeira, pois, astronomicamente, cada objeto pode ter atributos e relações diferentes. Um exemplo sobre atributo é que corpos que não são estrelas têm dados orbitais relevantes para o banco, como o periélio, afélio e período de translação da órbita, enquanto para estrelas essas informações não são relevantes *nesse caso*. Um exemplo sobre relação é que um satélite orbita um planeta enquanto um planeta anão não terá uma órbita afetada por um planeta necessária para cadastrar nesse cenário.
 
 ## Criação do banco com tratamento de exceção
 O tratamento com ```try```, ```except``` e ```else``` é usado para evitar que um erro de SQL crie um problema no código. Exemplo:
